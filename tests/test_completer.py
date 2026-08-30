@@ -171,6 +171,7 @@ if sys.platform == "win32":
         ("a bc", '"a bc"'),
         ("a  bc", '"a  bc"'),
         ("  bc", '"  bc"'),
+        ("a&bc", '"a&bc"'),
     ]
 else:
     pairs = [
@@ -197,6 +198,10 @@ else:
         ('a"bc', r"a\"bc"),
         ("a^bc", r"a\^bc"),
         ("a&bc", r"a\&bc"),
+        ("a`bc", r"a\`bc"),
+        ("a$bc", r"a\$bc"),
+        ("a<bc", r"a\<bc"),
+        ("a>bc", r"a\>bc"),
     ]
 
 

@@ -293,9 +293,9 @@ _UNICODE_RANGES = [(32, 0x3347A), (0xE0001, 0xE01F0)]
 __all__ = ["Completer", "IPCompleter"]
 
 if sys.platform == 'win32':
-    PROTECTABLES = ' '
+    PROTECTABLES = " &"
 else:
-    PROTECTABLES = ' ()[]{}?=\\|;:\'#*"^&'
+    PROTECTABLES = " ()[]{}?=\\|;:'#*\"^&$`<>"
 
 # Protect against returning an enormous number of completions which the frontend
 # may have trouble processing.
